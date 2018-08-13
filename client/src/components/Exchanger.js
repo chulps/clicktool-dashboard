@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Sixth from "./Sixth";
 import Range from "./Range";
+import '../CSS/Global.css'
 
 class Exchanger extends Component {
   render() {
@@ -12,7 +13,7 @@ class Exchanger extends Component {
             <div className="row">
               <Range />
             </div>
-            <small>
+            <small className='mt-1'>
               <div className="row">
                 <div className="col-6">= 0.9800</div>
                 <div className="col-6 text-right">

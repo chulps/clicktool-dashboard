@@ -31,7 +31,7 @@ class Participation extends Component {
               videoId="qGBZWbg_26A"
               onClose={() => this.setState({ isOpen: false })}
             />
-            <button onClick={this.openModal}>Open</button>
+            <button className='col-12 big-button p-2 to-bottom' onClick={this.openModal}>Watch video</button>
           </div>
         }
       />
