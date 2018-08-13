@@ -1,0 +1,140 @@
+/* 
+When using Bootstrap and CSS together I've come up with some of my own rules that I like to stick to (unless it makes sense to break them). 
+
+#1: CSS is reserved mostly for fonts, animations, and colors. 
+
+#2: Use Bootstrap's rules for margins, padding, alignment, spacing, etc. try not to write rules with padding and margins (sometimes you just have to)
+
+#3: Do your best not to modify any of Bootstrap's CSS rules (sometimes you have to).
+
+#4: When creating new classes:
+      • make them very small
+      • name them after what they do or what they make
+      • Model naming conventions as if they were Bootstrap CSS rules
+      
+      (EX. for a class that makes a background color purple... write it like this...
+          
+          .bg-purple {
+            background-color: purple;
+          }
+
+      )
+    */
+
+/* This document contains only global CSS */
+
+
+/* Set Global CSS Variables in :root*/
+:root {
+  --lt-grey: #f5f5f5;
+  --lt-blue: #36a2cd;
+  --md-grey: #c0c0c0;
+  --trans-white: rgba(255, 255, 255, 0.3);
+  --yellow: #feca40;
+  --red: #fd8a66;
+  --monty: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--lt-grey);
+}
+
+.break {
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+/* Set rules for background colors */
+.bg-lt-blue {
+  background-color: var(--lt-blue);
+}
+
+.bg-lt-grey {
+  background-color: var(--lt-grey);
+}
+
+.bg-trans-white {
+  background-color: var(--trans-white);
+}
+
+/* Set rules for text colors */
+.text-lt-blue {
+  color: var(--lt-blue);
+}
+
+.text-lt-grey {
+  color: var(--lt-grey);
+}
+
+.text-md-grey {
+  color: var(--md-grey);
+}
+
+.text-trans-white {
+  color: var(--trans-white);
+}
+
+/* Font size */
+.tiny {
+  font-size: 50%;
+}
+
+/* Borders */
+.border-left-trans-white, .border-left-trans-white-b {
+  color: white;
+}
+
+.border-left-trans-white:after {
+  content:''; 
+  width:1px; 
+  height:50%; 
+  background:white; 
+  position:absolute; 
+  left:0;
+  bottom:0;
+}
+
+.border-left-trans-white-b:after {
+  content:''; 
+  width:1px; 
+  height:100%; 
+  background:white; 
+  position:absolute; 
+  left:0;
+  top:0;
+}
+
+
+
+
+/* Set defaults for entire site */
+/* This is where I break my rule... Clear margins and padding that comes from bootstrap grid components. Set font to Montserrat*/
+*, h1, h2, h3, h4, h5, h6,
+p,
+.row, 
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto,
+.col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto,
+.col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto,
+.col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto,
+.col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  font-family: var(--monty);
+  padding: 0;
+  margin: 0;
+}
+
+*:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+iframe{
+  width: 160vh;
+  height: 90vh;
+  position: absolute;
+  left: -102vh ;
+  top: -30vh;
+  z-index: 10;
+}

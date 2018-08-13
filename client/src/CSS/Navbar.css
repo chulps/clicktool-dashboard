@@ -1,0 +1,10 @@
+.App-logo {
+    height: 60px;
+}
+
+/* Override default <a> rule */
+nav a {
+    color: var(--lt-blue);
+    font-size: .9rem;
+}
+

@@ -1,0 +1,21 @@
+
+  
+  .Countdown-col{
+    display: inline-block;
+  }
+  
+  .Countdown-col-element{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    vertical-align: text-bottom;
+  }
+  
+  .Countdown-col-element strong{
+    font-size: 30px;
+  }
+
+  .Countdown-to-bottom{
+    position: relative;
+    bottom: -.75rem;
+  }

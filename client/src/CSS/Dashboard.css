@@ -1,0 +1,43 @@
+/* Responsive square placeholder with 1:1 ratio */
+.qr-code {
+  position: "relative";
+  width: "100%";
+}
+
+/* Helper for the above CSS rule */
+.qr-code:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/* rule for sending these buttons to the bottom of their sections */
+.to-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Set rules for buttons */
+.big-button {
+  border: 1px solid var(--lt-blue);
+  border-radius: 25px;
+  width: calc(100% - 2.5rem);
+  bottom: 1rem;
+}
+
+.small-button {
+  border: 1px solid var(--lt-blue);
+  border-radius: 20px;
+  padding: .15rem 1rem;
+  font-size: 50%;
+}
+
+/* button hovers */
+.big-button:hover, .small-button:hover {
+  background-color: var(--lt-blue);
+  color: white;
+  transition: .5s ease;
+}
+
+
+
