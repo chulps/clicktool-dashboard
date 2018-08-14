@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Sixth from "./Sixth";
 import "../CSS/Global.css";
 import "../CSS/YoutubeModal.css"
+import "../CSS/Participate.css"
 import ModalVideo from 'react-modal-video'
 
 class Participate extends Component {
@@ -24,13 +25,14 @@ class Participate extends Component {
         heading="Participate"
         content={
           <div className='text-center' style={{width: '100%'}}>
+            <img height={180} src={require('../IMAGES/wall-e.jpg')} onClick={this.openModal}/>
+            
             <ModalVideo
               channel="youtube"
               isOpen={this.state.isOpen}
               videoId="qGBZWbg_26A"
               onClose={() => this.setState({ isOpen: false })}
             />
-            <img className='mx-auto' height={180} src={require('../IMAGES/wall-e.jpg')} onClick={this.openModal}/>
           </div>
         }
       />

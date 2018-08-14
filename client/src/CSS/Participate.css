@@ -1,0 +1,8 @@
+.frame {
+    background-image: url('../IMAGES/wall-e.jpg');
+    overflow: hidden;
+    /* background-size: cover; */
+    width: 100%;
+    height: 200%;
+    background-color: lemonchiffon;
+}

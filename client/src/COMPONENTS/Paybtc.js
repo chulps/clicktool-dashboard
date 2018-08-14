@@ -10,9 +10,9 @@ class Paybtc extends Component {
         heading="Pay with Bitcoin"
         content={
           <div className="row m-0">
-            <div className="qr-code col-4 bg-lt-grey" />
-            <div className="col-8 pl-3">
-              <div className='row mb-3'>
+            <div className="qr-code col-4 col-sm-3 bg-lt-grey" />
+            <div className="col-8 col-sm-9 pl-3">
+              <div className='row mb-3'> 
                 <p className="tiny col-12 mb-2 break">12345678901234234534561230948712341234</p>
                 <p className="text-md-grey col-12 tiny">Minimum payment 0.01 BTC</p>
                 <button className="small-button to-bottom">Copy Address</button>
