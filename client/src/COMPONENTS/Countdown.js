@@ -87,7 +87,7 @@ class Count extends Component {
 
     return (
       <div className="col-12">
-        <span className="Countdown-col col-4">
+        <span className="Countdown-col col-3 col-md-4">
           <span className="Countdown-col-element text-center">
             
             <CircularProgressbar
@@ -105,7 +105,7 @@ class Count extends Component {
           </span>
         </span>
 
-        <div className="col-8 d-inline-block timefix">
+        <div className="col-9 col-md-8 d-inline-block timefix">
           <div className="row">
             <span className="Countdown-col col-4 Countdown-to-bottom">
               <span className="Countdown-col-element text-center">

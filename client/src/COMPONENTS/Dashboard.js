@@ -10,7 +10,7 @@ import Exchange from "./Exchange";
 import Participate from "./Participate";
 import Chart from "./Chart";
 
-class Dash extends Component {
+class Dashboard extends Component {
   render() {
     return (
       <div>
@@ -53,4 +53,4 @@ class Dash extends Component {
   }
 }
 
-export default Dash;
+export default Dashboard;
