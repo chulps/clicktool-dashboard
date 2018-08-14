@@ -19,7 +19,7 @@ class Paybtc extends Component {
                   12345678901234234534561230948712341234
                 </p>
                 <p className="text-md-grey col-12 tiny">
-                  Minimum payment 0.01 ETC
+                  Minimum payment 0.01 BTC
                 </p>
                 <button className="small-button to-bottom">Copy Address</button>
               </div>
