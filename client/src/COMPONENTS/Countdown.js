@@ -87,7 +87,7 @@ class Count extends Component {
 
     return (
       <div className="col-12">
-        <span className="Countdown-col col-3 col-lg-4">
+        <span className="Countdown-col col-4 col-sm-3 col-lg-4">
           <span className="Countdown-col-element text-center">
             
             <CircularProgressbar
@@ -105,7 +105,7 @@ class Count extends Component {
           </span>
         </span>
 
-        <div className="col-9 col-lg-8 d-inline-block timefix">
+        <div className="col-8 col-sm-9 col-lg-8 d-inline-block timefix">
           <div className="row">
             <span className="Countdown-col col-4 Countdown-to-bottom">
               <span className="Countdown-col-element text-center">
@@ -114,14 +114,14 @@ class Count extends Component {
               </span>
             </span>
 
-            <span className="Countdown-col col-4 Countdown-to-bottom">
+            <span className="Countdown-col col-4 Countdown-to-bottom border-left">
               <span className="Countdown-col-element text-center">
                 {this.addLeadingZeros(countDown.min)}
                 <span className="text-md-grey tiny">Min</span>
               </span>
             </span>
 
-            <span className="Countdown-col col-4 Countdown-to-bottom">
+            <span className="Countdown-col col-4 Countdown-to-bottom border-left">
               <span className="Countdown-col-element text-center">
                 {this.addLeadingZeros(countDown.sec)}
                 <span className="text-md-grey tiny">Sec</span>

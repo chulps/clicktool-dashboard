@@ -15,7 +15,7 @@ class Special extends Component {
         content={
           <div className="col-12">
             <Count date={`${birthday}-11-12T00:00:00`} />
-            <div className="tiny text-md-grey to-bottom">
+            <div className="tiny text-md-grey to-bottom mb-lg-3 mb-xl-0">
               <p>ICO Enddate:</p>
               <p>October 30, 2017 00:00 PTS</p>
             </div>
