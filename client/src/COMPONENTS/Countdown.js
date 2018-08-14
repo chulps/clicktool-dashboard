@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import "react-circular-progressbar/dist/styles.css";
 import "../CSS/Global.css";
 import "../CSS/Countdown.css";
 import PropTypes from "prop-types";
+import CircularProgressbar from "react-circular-progressbar";
 
 class Count extends Component {
   constructor(props) {
@@ -80,44 +82,53 @@ class Count extends Component {
 
   render() {
     const countDown = this.state;
+    const daysLeft = this.addLeadingZeros(countDown.days);
+
 
     return (
-    
-      <div className="col-12 d-flex justify-content-end pt-5">
+      <div className="col-12">
         <span className="Countdown-col col-4">
           <span className="Countdown-col-element text-center">
-            <strong>{this.addLeadingZeros(countDown.days)}</strong>
-            <span className="text-md-grey tiny">
+            
+            <CircularProgressbar
+              strokeWidth={1}
+              percentage={daysLeft}
+              text={`${daysLeft}`}
+              // counterClockwise={true}
+            >
+            
+            </CircularProgressbar>
+
+            <span className="daysfix text-md-grey tiny">
               {countDown.days === 1 ? "Day" : "Days"}
             </span>
           </span>
         </span>
 
-        <div className="col-8 d-inline-block">
-            <div className='row'>
-          <span className="Countdown-col col-4 Countdown-to-bottom">
-            <span className="Countdown-col-element text-center">
-              {this.addLeadingZeros(countDown.hours)}
-              <span className="text-md-grey tiny">Hours</span>
+        <div className="col-8 d-inline-block timefix">
+          <div className="row">
+            <span className="Countdown-col col-4 Countdown-to-bottom">
+              <span className="Countdown-col-element text-center">
+                {this.addLeadingZeros(countDown.hours)}
+                <span className="text-md-grey tiny">Hours</span>
+              </span>
             </span>
-          </span>
 
-          <span className="Countdown-col col-4 Countdown-to-bottom">
-            <span className="Countdown-col-element text-center">
-              {this.addLeadingZeros(countDown.min)}
-              <span className="text-md-grey tiny">Min</span>
+            <span className="Countdown-col col-4 Countdown-to-bottom">
+              <span className="Countdown-col-element text-center">
+                {this.addLeadingZeros(countDown.min)}
+                <span className="text-md-grey tiny">Min</span>
+              </span>
             </span>
-          </span>
 
-          <span className="Countdown-col col-4 Countdown-to-bottom">
-            <span className="Countdown-col-element text-center">
-              {this.addLeadingZeros(countDown.sec)}
-              <span className="text-md-grey tiny">Sec</span>
+            <span className="Countdown-col col-4 Countdown-to-bottom">
+              <span className="Countdown-col-element text-center">
+                {this.addLeadingZeros(countDown.sec)}
+                <span className="text-md-grey tiny">Sec</span>
+              </span>
             </span>
-          </span>
           </div>
         </div>
-
       </div>
     );
   }

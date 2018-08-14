@@ -1,19 +1,47 @@
-.Countdown-col{
-    display: inline-block;
-  }
-  
-  .Countdown-col-element{
-    display: inline-block;
-    display: flex;
-    flex-direction: column;
-    vertical-align: text-bottom;
-  }
-  
-  .Countdown-col-element strong{
-    font-size: 30px;
-  }
+.Countdown-col {
+  display: inline-block;
+}
 
-  .Countdown-to-bottom{
-    position: relative;
-    bottom: -.75rem;
-  }
+.Countdown-col-element {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  vertical-align: text-bottom;
+}
+
+.Countdown-col-element strong {
+  font-size: 30px;
+}
+
+.Countdown-to-bottom {
+  position: relative;
+  bottom: -0.75rem;
+}
+
+.CircularProgressbar {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: black;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: var(--lt-blue);
+  /* stroke-linecap: round; */
+  -webkit-transition: stroke-dashoffset 0.5s ease 0s;
+  -o-transition: stroke-dashoffset 0.5s ease 0s;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.daysfix {
+  position: absolute;
+  width: 100%;
+  top: 60%;
+}
+
+.timefix {
+  position: absolute;
+  bottom: 1rem;
+}

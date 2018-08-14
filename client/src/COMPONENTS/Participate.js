@@ -27,6 +27,7 @@ class Participate extends Component {
               height={180}
               src={require("../IMAGES/wall-e.jpg")}
               onClick={this.openModal}
+              alt='participate'
             />
 
             <ModalVideo

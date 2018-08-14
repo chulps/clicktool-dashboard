@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../CSS/Global.css";
 
-class Time extends Component {
+class Timeline extends Component {
   render() {
     return (
       <div className="container-fluid mb-5 px-0 py-5 bg-lt-blue">
@@ -66,4 +66,4 @@ class Time extends Component {
   }
 }
 
-export default Time;
+export default Timeline;

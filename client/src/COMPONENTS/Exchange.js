@@ -3,7 +3,7 @@ import Sixth from "./Sixth";
 import Range from "./Range";
 import '../CSS/Global.css'
 
-class Exchanger extends Component {
+class Exchange extends Component {
   render() {
     return (
       <Sixth
@@ -13,7 +13,8 @@ class Exchanger extends Component {
             <div className="row">
               <Range />
             </div>
-            <small className='mt-1'>
+            <br/>
+            <small >
               <div className="row">
                 <div className="col-6">= 0.9800</div>
                 <div className="col-6 text-right">
@@ -40,4 +41,4 @@ class Exchanger extends Component {
   }
 }
 
-export default Exchanger;
+export default Exchange;

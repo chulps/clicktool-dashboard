@@ -6,7 +6,7 @@ class Chart extends Component {
   render() {
     return (
           <div className='container px-1'>
-            <h1 className='mb-3'><strong>Transactions</strong></h1>
+            <h3 className='mb-3'><strong>Transactions</strong></h3>
             <History />
           </div>
     );

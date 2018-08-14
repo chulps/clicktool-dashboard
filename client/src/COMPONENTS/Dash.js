@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "../CSS/Global.css";
 import "../CSS/Dashboard.css";
-import Time from "./Time";
+import Timeline from "./Timeline";
 import Coinbalance from "./Coinbalance";
 import Paybtc from "./Paybtc";
 import Payeth from "./Payeth";
-import Spec from "./Spec";
-import Exchanger from "./Exchanger";
+import Special from "./Special";
+import Exchange from "./Exchange";
 import Participate from "./Participate";
 import Chart from "./Chart";
 
@@ -14,7 +14,7 @@ class Dash extends Component {
   render() {
     return (
       <div>
-        <Time />
+        <Timeline />
         {/* this row wraps all six section of the main dashboard component */}
         <div className="row ">
           <div className="container p-0">
@@ -33,10 +33,10 @@ class Dash extends Component {
                 </div>
               </div>
               <div className="col-lg-4">
-                <Spec />
+                <Special />
               </div>
               <div className="col-lg-4">
-                <Exchanger />
+                <Exchange />
               </div>
               <div className="col-lg-4">
                 <Participate />

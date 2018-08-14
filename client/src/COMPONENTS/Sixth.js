@@ -8,7 +8,7 @@ function Sixth(props) {
         <div className='col-12 px-1 mb-2'>
             <div className='bg-white p-3' style={{height: '270px'}}>
                 {props.heading}
-                <div className='row m-0 pt-3'>
+                <div style={{height: 'calc(100% - 2rem)'}} className='row m-0 pt-3'>
                     {props.content}
                 </div>
             </div>

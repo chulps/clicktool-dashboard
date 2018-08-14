@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Sixth from "./Sixth";
-import Count from "./Count";
+import Count from "./Countdown";
 
-class Spec extends Component {
+class Special extends Component {
   render() {
     const currentDate = new Date();
     const birthday =
@@ -15,7 +15,7 @@ class Spec extends Component {
         content={
           <div className="col-12">
             <Count date={`${birthday}-11-12T00:00:00`} />
-            <div className="tiny text-md-grey mt-4">
+            <div className="tiny text-md-grey to-bottom">
               <p>ICO Enddate:</p>
               <p>October 30, 2017 00:00 PTS</p>
             </div>
@@ -26,4 +26,4 @@ class Spec extends Component {
   }
 }
 
-export default Spec;
+export default Special;
