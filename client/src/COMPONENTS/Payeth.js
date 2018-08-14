@@ -10,7 +10,7 @@ class Payeth extends Component {
         content={
           <div className="row m-0">
             <div className="col-3 col-md-4">
-              <img className='img-fluid' src={require('../IMAGES/qr-code.png')}/>
+              <img className='img-fluid border' src={require('../IMAGES/qr-code.png')}/>
             </div>
             <div className="col-9 col-md-8 pl-3">
               <div className="row mb-3">
