@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Sixth from "./Sixth";
 import "../CSS/Global.css";
-import "../CSS/Participate.css";
+import "../../node_modules/react-modal-video/css/modal-video.min.css"
 import ModalVideo from 'react-modal-video'
 
-class Participation extends Component {
+class Participate extends Component {
   
   constructor () {
     super()
@@ -25,13 +25,14 @@ class Participation extends Component {
         content={
           <div >
             <ModalVideo
-              width={'70vw'}
               channel="youtube"
               isOpen={this.state.isOpen}
               videoId="qGBZWbg_26A"
               onClose={() => this.setState({ isOpen: false })}
             />
-            <button className='col-12 big-button p-2 to-bottom' onClick={this.openModal}>Watch video</button>
+            <div className='o-hidden'>
+            <img style={{width: '100%' }} src={require('../IMAGES/wall-e.jpg')} onClick={this.openModal}/>
+            </div>
           </div>
         }
       />
@@ -39,4 +40,4 @@ class Participation extends Component {
   }
 }
 
-export default Participation;
+export default Participate;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../CSS/Global.css";
-import "../CSS/Participate.css";
+import "../CSS/Countdown.css";
 import PropTypes from "prop-types";
 
 class Count extends Component {

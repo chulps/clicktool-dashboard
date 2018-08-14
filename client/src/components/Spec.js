@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Sixth from "./Sixth";
-import Count from "./Count.js";
+import Count from "./Count";
 
 class Spec extends Component {
   render() {

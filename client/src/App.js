@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./CSS/Global.css";
 import "./CSS/App.css";
-import Navigation from "./components/Navigation";
-import Home from "./components/Home";
-import Dash from "./components/Dash";
+import Navigation from "./COMPONENTS/Navigation";
+import Home from "./COMPONENTS/Home";
+import Dash from "./COMPONENTS/Dash";
 
 class App extends Component {
   render() {

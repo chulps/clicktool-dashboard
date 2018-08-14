@@ -7,7 +7,7 @@ import Paybtc from "./Paybtc";
 import Payeth from "./Payeth";
 import Spec from "./Spec";
 import Exchanger from "./Exchanger";
-import Participation from "./Participation";
+import Participate from "./Participate";
 import Chart from "./Chart"
 
 class Dash extends Component {
@@ -39,7 +39,7 @@ class Dash extends Component {
                 <Exchanger />
               </div>
               <div className="col-lg-4">
-                <Participation />
+                <Participate />
               </div>
             </div>
             
