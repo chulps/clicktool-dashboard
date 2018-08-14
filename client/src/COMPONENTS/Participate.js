@@ -1,22 +1,20 @@
 import React, { Component } from "react";
 import Sixth from "./Sixth";
 import "../CSS/Global.css";
-import "../CSS/YoutubeModal.css"
-import "../CSS/Participate.css"
-import ModalVideo from 'react-modal-video'
+import "../CSS/YoutubeModal.css";
+import ModalVideo from "react-modal-video";
 
 class Participate extends Component {
-  
-  constructor () {
-    super()
+  constructor() {
+    super();
     this.state = {
       isOpen: false
-    }
-    this.openModal = this.openModal.bind(this)
+    };
+    this.openModal = this.openModal.bind(this);
   }
 
-  openModal () {
-    this.setState({isOpen: true})
+  openModal() {
+    this.setState({ isOpen: true });
   }
 
   render() {
@@ -24,9 +22,13 @@ class Participate extends Component {
       <Sixth
         heading="Participate"
         content={
-          <div className='text-center' style={{width: '100%'}}>
-            <img height={180} src={require('../IMAGES/wall-e.jpg')} onClick={this.openModal}/>
-            
+          <div className="text-center" style={{ width: "100%" }}>
+            <img
+              height={180}
+              src={require("../IMAGES/wall-e.jpg")}
+              onClick={this.openModal}
+            />
+
             <ModalVideo
               channel="youtube"
               isOpen={this.state.isOpen}

@@ -8,7 +8,7 @@ import Payeth from "./Payeth";
 import Spec from "./Spec";
 import Exchanger from "./Exchanger";
 import Participate from "./Participate";
-import Chart from "./Chart"
+import Chart from "./Chart";
 
 class Dash extends Component {
   render() {
@@ -42,9 +42,8 @@ class Dash extends Component {
                 <Participate />
               </div>
             </div>
-            
-            <div className="row my-5">
 
+            <div className="row my-5">
               <Chart />
             </div>
           </div>

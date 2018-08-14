@@ -5,7 +5,7 @@ import history from "./history.json";
 class History extends Component {
   render() {
     return (
-      <div className="bg-white">
+      <div className="bg-white shadow">
         
             <div className='row'>
               <div className="col pl-3">TxHash</div>
