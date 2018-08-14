@@ -1,5 +1,6 @@
 # clicktool-dashboard
 test project for clicktool
+Open README file in editor to see notes.
 
 TL;DR
 https://clicktool2.herokuapp.com/dashboard
